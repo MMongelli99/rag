@@ -4,6 +4,7 @@ clean:
     - name
     - EDITOR
     - TERM
+    - HOME # to provide access to globally installed ollama models
 inputs:
   nixpkgs:
     url: github:cachix/devenv-nixpkgs/rolling

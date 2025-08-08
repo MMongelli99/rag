@@ -7,7 +7,7 @@
 }: {
   imports = [
     ./devenv/dx # developer experience
-    # other devenv modules
+    ./devenv/ollama.nix
   ];
 
   env.name = "rag";
@@ -30,7 +30,7 @@
     version = "3.13";
     venv = {
       enable = true;
-      requirements = ./requirements.txt;
+      requirements = ./backend/requirements.txt;
     };
   };
 
