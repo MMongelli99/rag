@@ -18,6 +18,7 @@
   # https://devenv.sh/packages/
   packages = with pkgs; [
     # project-specific packages
+    python313Packages.python-magic
   ];
 
   # load environment variables from .env
